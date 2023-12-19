@@ -5,31 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
   </head>
-  <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city.." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Paris</h1>
-        <p>
-          Tuesday 14:49, scattered clouds
-          <br />
-          Humidity: 66%, Wind: 3.13km/h
-        </p>
-      </div>
-      <div>🌤️ 12°C</div>
-    </main>
+   <body>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Paris</h1>
+            <p class="weather-app-details">
+              Tuesday 14:49, scattered clouds
+              <br />
+              Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌤️</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weatehr-app-unit">°C</div>
+          </div>
+        </div>
+      </main>
 
     <footer>
       This project was coded by
-      <a href="" target="_blank"> Vandana Gupta</a>, is
-      <a href="" target="_blank">open-sourced on GitHub</a>
+      <a href="https://github.com/vandy17" target="_blank"> Vandana Gupta</a>,
+      is
+      <a href="https://github.com/vandy17/weather-final-project" target="_blank"
+        >open-sourced on GitHub</a
+      >
       and
-      <a href="" target="_blank">hosted on Netlify</a>
+      <a href="https://free-weather-app-world.netlify.app/" target="_blank"
+        >hosted on Netlify</a
+      >
     </footer>
   </body>
 </html>
